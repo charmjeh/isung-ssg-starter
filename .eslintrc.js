@@ -2,19 +2,30 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    es2021: true,
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
-    requireConfigFile: false
+    requireConfigFile: false,
   },
   extends: [
+    'airbnb-base',
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'prettier'
+    'plugin:prettier/recommended',
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
-  rules: {}
-}
+  rules: {
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
+    'lines-between-class-members': [
+      'warn',
+      'always',
+      { exceptAfterSingleLine: true },
+    ],
+    'prettier/prettier': 'warn',
+  },
+};
