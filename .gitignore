@@ -79,6 +79,8 @@ dist
 
 # IDE / Editor
 .idea
+.vscode
+.history
 
 # Service worker
 sw.*
