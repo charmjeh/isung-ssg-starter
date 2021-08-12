@@ -60,9 +60,8 @@ export default {
       updateTodo: 'todos/updateTodo',
       removeTodo: 'todos/removeTodo',
     }),
-    createTodo(e) {
-      this.addTodo(e.target.value);
-      e.target.value = '';
+    createTodo(event) {
+      this.addTodo(event.target.value);
       this.todoText = '';
     },
     clickCreateTodo() {
