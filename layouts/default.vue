@@ -105,6 +105,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-checkbox-multiple-marked',
+          title: 'Todos',
+          to: '/todos'
         }
       ],
       miniVariant: false,
