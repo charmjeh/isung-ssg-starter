@@ -26,6 +26,14 @@ module.exports = {
       'always',
       { exceptAfterSingleLine: true },
     ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state'],
+      },
+    ],
+    'no-shadow': ['error', { allow: ['state'] }],
     'prettier/prettier': 'warn',
   },
 };

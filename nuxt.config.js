@@ -74,4 +74,11 @@ export default {
       ],
     },
   },
+
+  loading: {
+    continueos: true,
+    throttle: 0,
+    color: 'blue',
+    height: '5px',
+  },
 };
